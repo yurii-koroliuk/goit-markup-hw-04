@@ -100,6 +100,9 @@ ul {
 /* #region Header */
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -166,8 +169,9 @@ ul {
 .nav-link.current::after {
     content: "";
     position: absolute;
-    bottom: -4px;
+    bottom: -1px;
 
+    border-radius: 2px;
     display: block;
     width: 100%;
     height: 4px;
@@ -215,8 +219,10 @@ ul {
     background-size: 100%;
 }
 
+
 .hero .container{
     padding: 188px 0;
+    background-size: cover;
 }
 
 .hero-title {
@@ -237,8 +243,8 @@ ul {
     margin: 0 auto;
     min-width: 169px;
     
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn-button:hover {
@@ -363,16 +369,31 @@ margin-bottom: 8px;
     gap: 24px;
 }
 
+.contacts-list-team {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contacts-list-item {
+    width: 40px;
+    height: 40px;
+
+}
+
 .contacts-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     background-color: #4D5AE5;
-    padding: 12px;
+    /* padding: 12px; */
     border-radius: 50%;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 100%;
+    height: 100%;
 }
 
 .contacts-btn:hover,
@@ -381,8 +402,7 @@ margin-bottom: 8px;
 }
 
 .contacts-icon {
-    width: 16px;
-    height: 16px;
+    fill: #f4f4fd;
 }
 
 /* #endregion Team */
