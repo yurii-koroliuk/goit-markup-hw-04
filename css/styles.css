@@ -206,19 +206,17 @@ ul {
 
 .hero {
     background-color: rgb(46, 47, 66);
-    
-}
-
-.hero .container{
-    width: 1440px;
-    padding: 188px 0;
+    max-width: 1440px;
     background-color: rgba(17, 17, 17, 0.4);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url('../images/background-hero.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/background-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-size: 100%;
-    size: 100%;
+}
+
+.hero .container{
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -267,17 +265,20 @@ ul {
     width: calc((100% - 72px) / 4)
 }
 
+.info-icon {
+    display: flex;
+    align-items: center;
+justify-content: center;
+height: 112px;
+background-color: #f4f4fd;
+border-radius: 4px;
+border: 1px solid #8e8f99;
+margin-bottom: 8px;
+}
+
 .info-svg {
     width: 64px;
     height: 64px;
-    padding: 24px 100px;
-    margin-bottom: 8px;
-
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background-color: #f4f4fd;
 }
 
 .info-subtitle {
@@ -385,7 +386,6 @@ ul {
 }
 
 /* #endregion Team */
-
 /* #region Portfolio */
 
 .portfolio {
